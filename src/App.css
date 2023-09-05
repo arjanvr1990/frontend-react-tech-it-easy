@@ -6,7 +6,9 @@
 
 /*Main styling*/
 main {
-
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
 }
 
 /*TV Counters Styling*/
@@ -67,7 +69,7 @@ main {
 }
 /*TV Description Style Lines*/
 
-.tvDescription {
+.tvDescriptionBestSelling {
     display: flex;
     border-style: dashed;
     border-width: 2px;
@@ -79,7 +81,7 @@ main {
     border-radius: 5px;
 }
 
-.tvDescription img {
+.tvDescriptionBestSelling img {
     display: flex;
     max-width: 200px;
     max-height: 100%;
@@ -96,6 +98,7 @@ main {
 
 .tvTitle {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .tvPrice {
@@ -126,4 +129,59 @@ main {
     padding: 2px;
     margin-right: 5px;
     font-size: 14px;
+}
+
+.checkIcon {width: 12px;
+    height: 12px;
+    padding: 0px;
+    margin: 3px;
+}
+
+.tvDescription {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 5px;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.tvDescription img {
+    display: flex;
+    max-width: 200px;
+    max-height: 100%;
+    margin: 30px;
+    object-fit: contain;
+}
+
+
+/*Options Styles*/
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*.tvOption {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+.descriptionOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.optionsList {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.optionItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
 }

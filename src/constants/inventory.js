@@ -423,3 +423,8 @@ const ambiLightAvailables = inventory.filter((ambiLightAvailable) => {
 console.log(ambiLightAvailables);
 
 /// Hierbij had ik ook chatGPT nodig, met de uitleg daarvan begin ik het te begrijpen////
+
+
+
+
+
