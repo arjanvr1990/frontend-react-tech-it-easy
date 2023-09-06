@@ -326,6 +326,105 @@ export let inventory = [
         originalStock: 10,
         sold: 8,
     },
+    {type: 'UHD 55AU7040',
+        name: 'Crystal',
+        brand: 'Samsung',
+        price: 549,
+        availableSizes: [43, 50, 55, 65],
+        refreshRate: 50,
+        screenType: 'LED-LCD',
+        screenQuality: 'Ultra HD/4K',
+        smartTv: true,
+        sourceImg: 'https://image.coolblue.nl/max/500x500/products/1786196',
+        options: [
+            {
+                name: "wifi",
+                applicable: true
+            },
+            {
+                name: "speech",
+                applicable: false
+            },
+            {
+                name: "hdr",
+                applicable: true
+            },
+            {
+                name: "bluetooth",
+                applicable: true
+            },
+            {
+                name: "ambiLight",
+                applicable: false
+            }
+        ],
+        originalStock: 52,
+        sold: 17,
+    }
 ];
+
+console.log("opdracht 1a");
+
+const typeNames = inventory.map (typename => typename.type);
+
+console.log(typeNames)
+
+
+console.log("opdracht 1b");
+
+const soldOuts = inventory.filter((soldOut) => {
+    if (soldOut.originalStock - soldOut.sold === 0) {
+        return soldOut;
+    }
+});
+
+console.log(soldOuts);
+
+console.log("opdracht 1c");
+
+const findTvs = inventory.find ((findTv) => {
+    return (findTv.type === "NH3216SMART") ;
+});
+
+console.log(findTvs);
+
+
+console.log("opdracht 1d");
+
+const sportAbles = inventory.filter ((sportAble) => {
+    return (sportAble.refreshRate >= 100);
+});
+
+console.log(sportAbles);
+
+
+console.log("opdracht 1e");
+
+// const tvSizesAvailable = inventory.filter ((tvSizeAvailable) => {
+//     return tvSizeAvailable.availableSizes.some (tvSizeAvailable >= 65);
+// });
+//
+// console.log(tvSizesAvailable);
+
+//Ik kwam hier niet uit, normaal zou je een for loop in een for loop gebruiken, hoe dat moet in de arrow, begreep ik niet, onderstaande antwoord is van chatGPT en het werkt, maar ik begrijp het niet
+
+const tvSizesAvailable = inventory.filter((tvSizeAvailable) => {
+    return tvSizeAvailable.availableSizes.some(size => size >= 65);
+});
+
+console.log(tvSizesAvailable);
+
+console.log("opdracht 1f");
+
+const ambiLightAvailables = inventory.filter((ambiLightAvailable) => {
+    return ambiLightAvailable.options.some(option => option.name === "ambiLight" && option.applicable);
+});
+
+console.log(ambiLightAvailables);
+
+/// Hierbij had ik ook chatGPT nodig, met de uitleg daarvan begin ik het te begrijpen////
+
+
+
 
 

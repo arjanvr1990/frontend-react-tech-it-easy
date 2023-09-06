@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Main styling*/
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+/*TV Counters Styling*/
+
+.tvCounters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tvSoldCounter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: greenyellow;
+    width: 300px;
+    height: 250px;
+    font-size: 25px;
+    border-color: greenyellow;
+    border-style: solid;
+    border-radius: 5px;
+
+}
+
+.originalStockTv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: cornflowerblue;
+    width: 300px;
+    height: 250px;
+    font-size: 25px;
+    border-color: cornflowerblue;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.inventoryStockTv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: indianred;
+    width: 300px;
+    height: 250px;
+    font-size: 25px;
+    border-color: indianred;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+.tvCounters p {
+    text-align: center;
+}
+/*TV Description Style Lines*/
+
+.tvDescriptionBestSelling {
+    display: flex;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    background-color: ghostwhite;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 5px;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.tvDescriptionBestSelling img {
+    display: flex;
+    max-width: 200px;
+    max-height: 100%;
+    margin: 30px;
+    object-fit: contain;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+
+}
+
+.tvTitle {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.tvPrice {
+    font-size: 30px;
+}
+
+.applications {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.applications img {
+    width: 12px;
+    height: 12px;
+    padding: 0px;
+    margin: 3px;
+}
+
+.applications p {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Button Shuffle styling*/
+
+.buttonShuffle button {
+    padding: 2px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.checkIcon {width: 12px;
+    height: 12px;
+    padding: 0px;
+    margin: 3px;
+}
+
+.tvDescription {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    padding-bottom: 5px;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.tvDescription img {
+    display: flex;
+    max-width: 200px;
+    max-height: 100%;
+    margin: 30px;
+    object-fit: contain;
+}
+
+
+/*Options Styles*/
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/*.tvOption {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*}*/
+
+.descriptionOptions {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.optionsList {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.optionItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
